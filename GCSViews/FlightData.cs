@@ -395,6 +395,7 @@ namespace MissionPlanner.GCSViews
             if (gspeedMax != 0)
             {
                 Gspeed.MaxValue = gspeedMax;
+                Gspeed.BaseArcSweep = (int)(gspeedMax * 3.6f);
             }
 
             MainV2.comPort.ParamListChanged += FlightData_ParentChanged;
@@ -409,7 +410,22 @@ namespace MissionPlanner.GCSViews
             hud1.displayicons = Settings.Instance.GetBoolean("HUD_showicons", false);
 
             tabControlactions.Multiline = Settings.Instance.GetBoolean("tabControlactions_Multiline", false);
+        }
 
+        private void SetGaugesLabelSpeed()
+        {
+                BeginInvoke((Action)delegate
+                {
+                    try
+                    {
+                        var airspeed = Math.Abs(MainV2.comPort.MAV.cs.airspeed);
+                        var verticalspeed = Math.Abs(MainV2.comPort.MAV.cs.verticalspeed);
+                        VspeedLabel1.Text = ((int)verticalspeed).ToString();
+                        VspeedLabel2.Text = ((int)(verticalspeed * 10) % 10).ToString();
+                        SpeedLabel1.Text = ((int)airspeed / 10).ToString();
+                        SpeedLabel2.Text = ((int)airspeed % 10).ToString();
+                    } catch {}
+                });
         }
 
         public void Activate()
@@ -2661,7 +2677,7 @@ namespace MissionPlanner.GCSViews
             {
                 try
                 {
-                    modifyandSetSpeed.Value = (decimal) ((float) MainV2.comPort.MAV.param["TRIM_ARSPD_CM"] / 100.0);
+                    modifyandSetSpeed.Value = (decimal) ((float) MainV2.comPort.MAV.param["TRIM_ARSPD_CM"] / 100.0);                    
                 }
                 catch
                 {
@@ -3230,6 +3246,9 @@ namespace MissionPlanner.GCSViews
 
             while (threadrun)
             {
+
+                SetGaugesLabelSpeed();
+
                 if (MainV2.comPort.giveComport)
                 {
                     //await Task.Delay(50);
@@ -4516,7 +4535,7 @@ namespace MissionPlanner.GCSViews
         private void russianHudToolStripMenuItem_Click(object sender, EventArgs e)
         {
             hud1.Russian = !hud1.Russian;
-            Settings.Instance["russian_hud"] = hud1.Russian.ToString();
+            Settings.Instance["russian_hud"] = hud1.Russian.ToString(); // I think its a shit
         }
 
         private void saveFileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -6252,6 +6271,11 @@ namespace MissionPlanner.GCSViews
             {
                 CustomMessageBox.Show(Strings.CommandFailed + ex.ToString(), Strings.ERROR);
             }
+        }
+
+        private void Gvspeed_ValueInRangeChanged(object sender, AGaugeApp.AGauge.ValueInRangeChangedEventArgs e)
+        {
+
         }
     }
 }

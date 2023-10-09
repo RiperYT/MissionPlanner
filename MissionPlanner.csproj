@@ -163,6 +163,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAntennaTracker.uk.resx">
       <DependentUpon>ConfigAntennaTracker.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigArducopter.uk.resx">
       <DependentUpon>ConfigArducopter.cs</DependentUpon>
@@ -290,6 +291,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.uk.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightPlanner.uk.resx">
       <DependentUpon>FlightPlanner.cs</DependentUpon>
@@ -302,6 +304,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\SITL.uk.resx">
       <DependentUpon>SITL.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GeoRef\georefimage.uk.resx">
       <DependentUpon>georefimage.cs</DependentUpon>
@@ -2866,6 +2869,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.es-ES.resx">
       <DependentUpon>ConfigAccelerometerCalibration.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.fr.resx">
       <DependentUpon>ConfigAccelerometerCalibration.cs</DependentUpon>
@@ -2881,6 +2885,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.pl.resx">
       <DependentUpon>ConfigAccelerometerCalibration.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.pt.resx">
       <DependentUpon>ConfigAccelerometerCalibration.cs</DependentUpon>
@@ -3018,6 +3023,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigArduplane.resx">
       <DependentUpon>ConfigArduplane.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigArduplane.ar.resx">
       <DependentUpon>ConfigArduplane.cs</DependentUpon>
@@ -3030,9 +3036,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigArduplane.fr.resx">
       <DependentUpon>ConfigArduplane.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigArduplane.id-ID.resx">
       <DependentUpon>ConfigArduplane.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigArduplane.it-IT.resx">
       <DependentUpon>ConfigArduplane.cs</DependentUpon>
@@ -3102,6 +3110,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAteryx.resx">
       <DependentUpon>ConfigAteryx.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAteryx.ar.resx">
       <DependentUpon>ConfigAteryx.cs</DependentUpon>
@@ -3114,15 +3123,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAteryx.fr.resx">
       <DependentUpon>ConfigAteryx.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAteryx.id-ID.resx">
       <DependentUpon>ConfigAteryx.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAteryx.it-IT.resx">
       <DependentUpon>ConfigAteryx.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAteryx.ja-JP.resx">
       <DependentUpon>ConfigAteryx.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAteryx.ko-KR.resx">
       <DependentUpon>ConfigAteryx.cs</DependentUpon>
@@ -3153,6 +3166,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAteryxSensors.es-ES.resx">
       <DependentUpon>ConfigAteryxSensors.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAteryxSensors.fr.resx">
       <DependentUpon>ConfigAteryxSensors.cs</DependentUpon>
